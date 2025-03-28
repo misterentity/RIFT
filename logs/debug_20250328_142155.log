@@ -1,0 +1,681 @@
+2025-03-28 14:21:55,286 - INFO - [port_flood_test_gui.py:1428] - Debug log file: logs\debug_20250328_142155.log
+2025-03-28 14:21:55,286 - INFO - [port_flood_test_gui.py:1429] - Platform: Windows 11
+2025-03-28 14:21:55,286 - INFO - [port_flood_test_gui.py:1430] - Python version: 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+2025-03-28 14:21:55,286 - INFO - [port_flood_test_gui.py:1431] - Scapy available: True
+2025-03-28 14:21:55,480 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:21:55,495 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:21:55,495 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:21:55,495 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:21:55,495 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{B379EF20-E9C2-11EF-AEAA-806E6F6E6963} to Loopback Pseudo-Interface 1
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:21:55,496 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{B379EF20-E9C2-11EF-AEAA-806E6F6E6963}', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:21:55,497 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{B379EF20-E9C2-11EF-AEAA-806E6F6E6963}
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:21:55,498 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:21:55,498 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:21:59,680 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:21:59,682 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:21:59,684 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:21:59,686 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:21:59,687 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:00,707 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:00,709 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:00,710 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:00,712 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:00,713 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,735 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,736 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,738 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,739 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,740 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,743 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:01,743 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:01,743 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:01,744 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:01,744 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:01,744 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:01,763 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:01,764 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:01,765 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:01,760 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,765 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:01,761 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:01,766 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:01,767 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,768 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,769 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:01,770 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:01,770 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:01,770 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:01,770 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:01,771 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:01,772 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:01,773 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:01,774 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:01,775 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:01,776 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:01,777 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:01,778 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:01,779 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:01,780 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:01,780 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:01,780 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:01,780 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:01,780 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:01,780 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:01,780 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:01,797 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,799 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:01,800 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:02,782 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:02,784 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:02,818 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:02,819 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:02,820 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,801 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,802 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,805 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:03,806 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:03,820 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:03,819 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,820 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:03,820 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:03,820 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:03,820 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,821 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:03,822 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:03,822 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:03,822 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:03,822 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:03,823 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:03,824 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:03,824 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:03,826 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:03,827 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:03,839 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:03,840 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,842 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:03,843 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:03,844 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:03,845 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:03,846 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:03,847 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:03,847 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,847 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:03,848 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:03,848 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:03,848 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:03,848 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:03,850 - ERROR - [port_flood_test_gui.py:107] - interface_error: Interface configuration error: Interface \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} not found in Scapy interfaces
+2025-03-28 14:22:03,852 - DEBUG - [port_flood_test_gui.py:878] - Starting Windows interface detection...
+2025-03-28 14:22:03,861 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:03,863 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:03,864 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:03,864 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:03,864 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:03,864 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:03,865 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:03,867 - DEBUG - [port_flood_test_gui.py:884] - Found 53 Windows interfaces
+2025-03-28 14:22:03,867 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,867 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,867 - DEBUG - [port_flood_test_gui.py:885] - Found 53 Scapy interfaces
+2025-03-28 14:22:03,867 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:03,868 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:03,868 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B} to Ethernet
+2025-03-28 14:22:03,868 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,868 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,868 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5} to Wi-Fi
+2025-03-28 14:22:03,869 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:03,869 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:03,869 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17} to Local Area Connection* 1
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6} to Local Area Connection* 2
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE} to Bluetooth Network Connection
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_Microsoft KM-TEST Loopback Adapter to Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:03,870 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72} to vEthernet (Default Switch)
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:923] - Matched \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8} to vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:03,871 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}', 'win_name': 'Ethernet', 'friendly_name': 'Realtek Gaming 2.5GbE Family Controller', 'description': 'IPs: 192.168.1.186', 'ip': '192.168.1.186'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}', 'win_name': 'Wi-Fi', 'friendly_name': 'Intel(R) Wi-Fi 6 AX200 160MHz', 'description': 'IPs: 169.254.255.11', 'ip': '169.254.255.11'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}', 'win_name': 'Local Area Connection* 1', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter', 'description': 'IPs: 169.254.15.207', 'ip': '169.254.15.207'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}', 'win_name': 'Local Area Connection* 2', 'friendly_name': 'Microsoft Wi-Fi Direct Virtual Adapter #2', 'description': 'IPs: 169.254.81.139', 'ip': '169.254.81.139'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}', 'win_name': 'Bluetooth Network Connection', 'friendly_name': 'Bluetooth Device (Personal Area Network)', 'description': 'IPs: 169.254.175.115', 'ip': '169.254.175.115'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_Microsoft KM-TEST Loopback Adapter', 'win_name': 'Loopback Pseudo-Interface 1', 'friendly_name': 'Software Loopback Interface 1', 'description': 'IPs: ::1', 'ip': '::1'}
+2025-03-28 14:22:03,872 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}', 'win_name': 'vEthernet (Default Switch)', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter', 'description': 'IPs: fe80::2001:c5d0:fbb2:4543, 172.28.96.1', 'ip': 'fe80::2001:c5d0:fbb2:4543'}
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:949] - Added interface: {'name': '\\Device\\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}', 'win_name': 'vEthernet (WSL (Hyper-V firewall))', 'friendly_name': 'Hyper-V Virtual Ethernet Adapter #2', 'description': 'IPs: fe80::db8f:2fb:2616:c05e, 172.17.240.1', 'ip': 'fe80::db8f:2fb:2616:c05e'}
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:975] - 
+Final Interface List:
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 1:
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{5B8C7249-5854-4EF1-97B1-DCC32F150A2B}
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:03,873 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Ethernet
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Realtek Gaming 2.5GbE Family Controller
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:981] -   IP: 192.168.1.186
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 2:
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{FBB3CFD0-7289-4C84-AF19-5F5EC9A7E0C5}
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Wi-Fi
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:03,874 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Intel(R) Wi-Fi 6 AX200 160MHz
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.255.11
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 3:
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35BBE04A-6AC7-4198-BA20-013D629D7F17}
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 1
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:03,875 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.15.207
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 4:
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{031CBDCF-5140-4CE3-A3A6-B089F0BFC1F6}
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Local Area Connection* 2
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:03,876 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.81.139
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 5:
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{7883DA1A-7BCC-4588-9058-0B8224BF18AE}
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Bluetooth Network Connection
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Bluetooth Device (Personal Area Network)
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:981] -   IP: 169.254.175.115
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:03,877 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 6:
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_Microsoft KM-TEST Loopback Adapter
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: Loopback Pseudo-Interface 1
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Software Loopback Interface 1
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:981] -   IP: ::1
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 7:
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{35DFD5A5-10C8-4D88-8C31-D8DFCA4C7B72}
+2025-03-28 14:22:03,878 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (Default Switch)
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter
+2025-03-28 14:22:03,879 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::2001:c5d0:fbb2:4543
+2025-03-28 14:22:03,879 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:977] - 
+Interface 8:
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:978] -   Scapy Name: \Device\NPF_{BA6E030E-289C-4F04-859A-D612B130DCD8}
+2025-03-28 14:22:03,879 - DEBUG - [port_flood_test_gui.py:979] -   Windows Name: vEthernet (WSL (Hyper-V firewall))
+2025-03-28 14:22:03,880 - DEBUG - [port_flood_test_gui.py:980] -   Friendly Name: Hyper-V Virtual Ethernet Adapter #2
+2025-03-28 14:22:03,880 - DEBUG - [port_flood_test_gui.py:981] -   IP: fe80::db8f:2fb:2616:c05e
+2025-03-28 14:22:03,880 - INFO - [port_flood_test_gui.py:986] - Successfully found 8 valid interfaces
+2025-03-28 14:22:03,895 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:04,838 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:04,880 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:04,911 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:05,854 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:05,895 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
+2025-03-28 14:22:05,926 - WARNING - [port_flood_test_gui.py:107] - send_error: Error sending packet: Interface 'Microsoft KM-TEST Loopback Adapter' not found !
